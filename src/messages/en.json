@@ -1,0 +1,9 @@
+{
+  "vols": "Flights",
+  "tableau": "Dashboard",
+  "a_propos": "About",
+  "connexion": "Login",
+  "deconnexion": "Logout",
+  "rechercher": "Search",
+  "aucun_vol": "No flight found"
+}
