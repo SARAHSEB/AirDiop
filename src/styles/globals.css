@@ -1,0 +1,191 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reset et styles de base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f9fafb;
+  color: #111827;
+}
+
+/* Assurer que tous les textes ont une couleur visible */
+h1, h2, h3, h4, h5, h6 {
+  color: #111827;
+}
+
+p, span, div {
+  color: #374151;
+}
+
+/* Styles pour les inputs et formulaires */
+input, select, textarea {
+  color: #111827 !important;
+  background-color: white !important;
+}
+
+input::placeholder {
+  color: #9ca3af !important;
+}
+
+/* Styles personnalisés pour les sliders */
+.slider {
+  background: #e5e7eb;
+}
+
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #0EA5E9;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #0EA5E9;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Animations personnalisées */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes plane-fly {
+  from {
+    left: 0;
+    opacity: 0.9;
+  }
+  to {
+    left: calc(100vw - 64px);
+    opacity: 1;
+  }
+}
+
+
+.fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Styles pour les inputs de date */
+input[type="date"] {
+  color: #111827 !important;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 2px;
+  opacity: 0.6;
+  filter: invert(0.5);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+  opacity: 1;
+}
+
+/* Scrollbar personnalisée */
+.overflow-y-auto::-webkit-scrollbar {
+  width: 6px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Styles spécifiques pour les cartes de vol */
+.flight-card {
+  background-color: white;
+  color: #111827;
+}
+
+.flight-card h3,
+.flight-card h4,
+.flight-card p,
+.flight-card span {
+  color: inherit;
+}
+
+/* Styles pour les boutons */
+button {
+  color: inherit;
+}
+
+button.bg-sky-500 {
+  color: white !important;
+}
+
+button.bg-gray-100 {
+  color: #374151 !important;
+}
+
+/* Styles pour les liens */
+a {
+  color: #374151;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0ea5e9;
+}
+
+/* Footer styles */
+footer {
+  background-color: #111827 !important;
+  color: white !important;
+}
+
+footer h4,
+footer p,
+footer span,
+footer a {
+  color: inherit !important;
+}
+
+footer a:hover {
+  color: white !important;
+}
+
+/* Styles pour les labels */
+label {
+  color: #374151 !important;
+}
+
+/* Styles pour les options de select */
+option {
+  color: #111827 !important;
+  background-color: white !important;
+}
