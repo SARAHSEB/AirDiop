@@ -29,7 +29,7 @@ const CITY_TO_IATA: { [key: string]: string } = {
   'barcelone': 'BCN',
   'barcelona': 'BCN',
   'munich': 'MUC',
-  'zurich': 'ZUR',
+  'zurich': 'ZRH',
   'vienne': 'VIE',
   'vienna': 'VIE',
   'bruxelles': 'BRU',
